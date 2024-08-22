@@ -13,7 +13,14 @@ const port = process.env.PORT || 4000;
 const MONGODB_URI = process.env.MONGODB_URI;
 
 app.use(express.json());
-app.use(cors());
+
+app.use(cors({
+  origin: 'https://silver-sunflower-d0a53a.netlify.app/', 
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type']
+}));
+
+
 connectDB(MONGODB_URI);
 
 app.get("/", (req, res) => {
