@@ -16,6 +16,10 @@ app.use(express.json());
 app.use(cors());
 connectDB(MONGODB_URI);
 
+app.get("/", (req, res) => {
+  res.send("running successfully");
+});
+
 // Defining routes
 app.use("/book", bookrouter);
 app.use("/user", userrouter)
