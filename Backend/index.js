@@ -12,7 +12,7 @@ const port = process.env.PORT || 4000;
 const MONGODB_URI = process.env.MONGODB_URI;
 
 app.use(cors({
-  origin: 'https://silver-sunflower-d0a53a.netlify.app', 
+  origin: 'https://ornate-peony-cb4828.netlify.app', 
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 }));
