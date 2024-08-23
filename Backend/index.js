@@ -12,7 +12,7 @@ const port = process.env.PORT || 4000;
 const MONGODB_URI = process.env.MONGODB_URI;
 
 app.use(cors({
-  origin: 'https://ornate-peony-cb4828.netlify.app', 
+  origin: 'https://mybookstoresapp.netlify.app/', 
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 }));
