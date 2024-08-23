@@ -12,7 +12,7 @@ const port = process.env.PORT || 4000;
 const MONGODB_URI = process.env.MONGODB_URI;
 
 app.use(cors({
-  origin: 'https://mybookstoresapp.netlify.app/', 
+  origin: 'https://mybookstoreapps.netlify.app', 
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 }));
